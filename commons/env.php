@@ -7,7 +7,7 @@ define('PATH_VIEW',         __DIR__ . '/../views/');
 
 define('PATH_UPLOAD',       __DIR__ . '/../');
 
-define('BASE_URL',          'http://localhost/fpoly-base-duan1-tutor/');
+define('BASE_URL',          'http://localhost/Duan1/Du_an1/index.php');
 
 define('DB_HOST',           'localhost');
 define('DB_PORT',           '3306');

@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 // Require file trong commons
 require_once './commons/env.php';
@@ -23,13 +23,13 @@ $arrRouteNeedAuth = [
     'addOrder',
     'updateQuantity',
     'createUser'
-]; 
+];
 
 // Kiểm tra xem user đã đăng nhập chưa
 middleware_auth_check($act, $arrRouteNeedAuth);
 
-match($act) {
-    '/' => homeIndex(),
+match ($act) {
+    '/' => trangchu(),
     'cart' => cartIndex(),
     'addToCart' => addToCart(),
     'remoteCartItem' => remoteCartItem(),
@@ -38,9 +38,14 @@ match($act) {
     'addOrder' => addOrder(),
     'updateQuantity' => updateQuantity(),
 
-
+    //user
     'addUser' => addUser(),
     'createUser' => createUser(),
+
+    //noidung
+    'danhsachnoidung' => danhsachnoidung(),
+    'themnoidung' => themnoidung(),
+    
 
     // Authen
     'login' => authenShowFormLogin(),
