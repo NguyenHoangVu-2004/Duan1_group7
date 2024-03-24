@@ -46,8 +46,18 @@ match ($act) {
     'danhsachnoidung' => danhsachnoidung(),
     'themnoidung' => themnoidung(),
     'create_noidung' => create_noidung(),
+    'suanoidung' => suanoidung(),
+    'update_noidung' => update_noidung(),
     'xoanoidung' => xoanoidung(),
     
+    //lienhe
+    'lienhe' => lienhe(),
+
+    //binhluan
+    'binhluan' => binhluan(),
+
+    //danhgia
+    'danhgia' => danhgia(),
 
     // Authen
     'login' => authenShowFormLogin(),

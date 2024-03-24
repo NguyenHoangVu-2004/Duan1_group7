@@ -39,13 +39,12 @@ include "views/layout/menu.php";
             <th>Nội dung bình luận</th>
         </tr>
         <?php
-        // var_dump($danhgia);
         foreach ($binhluan as $item) : ?>
             <tr>
                 <td><?php echo $item['id_binh_luan']; ?></td>
                 <td><?php echo $item['ngay_dang']; ?></td>
                 <td><?= $item['ten_nguoi_dung']  ?></td>
-                <td><img src="assets/admin/img/<?php echo $item['anh'] ?>" alt="" width="200px" height="200px"></td>
+                <td><img src="uploads/products/<?= $item['anh'] ?>" alt="" width="200px" height="200px"></td>
                 <td><?= $item['ten_san_pham'] ?></td>
                 <td><?php echo $item['noidung_binhluan']; ?></td>
             </tr>
