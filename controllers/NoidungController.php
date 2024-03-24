@@ -116,3 +116,12 @@ function xoanoidung()
         echo "<script>window.location.href = 'index.php?act=danhsachnoidung';</script>";
     }
 }
+
+function xoaAllnoidung()
+{
+    if (isset($_GET['act']) && $_GET['act'] == 'xoaAllnoidung') {
+        deleteAll_noidung();
+        echo "<script>window.location.href = 'index.php?act=danhsachnoidung';</script>";
+    }
+}
+

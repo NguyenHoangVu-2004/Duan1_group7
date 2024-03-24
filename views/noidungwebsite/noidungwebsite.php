@@ -74,6 +74,7 @@ include "views/layout/menu.php";
         
     </table>
     <div class="button">
+    <a href="<?= BASE_URL . '?act=xoaAllnoidung' ?>"><input type="submit" value="Xoá tất cả " style="background-color: red;" onclick="return confirm('Bạn có chắc chắn muốn xoá tất cả nội dung không?')" name="xoaAll"></a>
         <a href="<?= BASE_URL . '?act=themnoidung' ?>"><input type="submit" value="Thêm nội dung" name="them"></a>
     </div>
 </div>

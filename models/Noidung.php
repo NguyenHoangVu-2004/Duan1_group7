@@ -72,4 +72,16 @@ if (!function_exists('update_noidung')) {
         }
     }
 }
+if (!function_exists('deleteAll_noidung')) {
+    function deleteAll_noidung() {
+        try {
+            $sql = "DELETE FROM `tb_noi_dung`";
+            
+            $stmt = $GLOBALS['conn']->prepare($sql);
 
+            $stmt->execute();
+        } catch (\Exception $e) {
+            debug($e);
+        }
+    }
+}
