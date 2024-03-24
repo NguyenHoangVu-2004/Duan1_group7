@@ -62,40 +62,40 @@
             </li>
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="<?= BASE_URL . '?act=dangnhap' ?>">
                     <span>Đăng nhập</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?= BASE_URL . '?act=nguoidung' ?>">
                     <span>Người dùng</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?= BASE_URL . '?act=chucvu' ?>">
                     <span>Chức vụ</span></a>
             </li>
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?= BASE_URL . '?act=danhmuc' ?>">
                     <span>Danh mục</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?= BASE_URL . '?act=sanpham' ?>">
                     <span>Sản phẩm</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?= BASE_URL . '?act=khuyenmai' ?>">
                     <span>Khuyến mãi</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?act=baiviet">
+                <a class="nav-link" href="<?= BASE_URL . '?act=baiviet' ?>">
                     <span>Bài viết</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?act=binhluan">
+                <a class="nav-link" href="<?= BASE_URL . '?act=binhluan' ?>">
                     <span>Bình luận</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?act=danhgia">
+                <a class="nav-link" href="<?= BASE_URL . '?act=danhgia' ?>">
                     <span>Đánh giá</span></a>
             </li>
             <li class="nav-item">
@@ -103,7 +103,7 @@
                     <span>Nội dung website</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?act=lienhe">
+                <a class="nav-link" href="<?= BASE_URL . '?act=lienhe' ?>">
                     <span>Liên hệ</span></a>
             </li>
 

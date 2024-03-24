@@ -59,6 +59,9 @@ match ($act) {
     //danhgia
     'danhgia' => danhgia(),
 
+    //chucvu
+    'chucvu' => chucvu(),
+
     // Authen
     'login' => authenShowFormLogin(),
     'logout' => authenLogout(),
