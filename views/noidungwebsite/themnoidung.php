@@ -45,7 +45,7 @@ include "./views/layout/menu.php";
 </style>
 <div class="container-fluid">
     <h1>Thêm nội dung website</h1>
-    <form action="" method="post" enctype="multipart/form-data">
+    <form action="<?= BASE_URL . '?act=create_noidung' ?>" method="post" enctype="multipart/form-data">
         <p for="ten_trang_web">Tên trang web</p>
         <input type="text" name="ten_trang_web" id="ten_trang_web">
 
@@ -62,7 +62,7 @@ include "./views/layout/menu.php";
         <input class="bt" type="reset" value="Nhập lại">
         <input class="bt" type="submit" value="Thêm" name="them">
     </form>
-    <a href="?act=noidung"><input type="button" value="Danh sách"></a>
+    <a href="index.php?act=danhsachnoidung"><input type="button" value="Danh sách"></a>
 </div>
 
 <!-- <style>

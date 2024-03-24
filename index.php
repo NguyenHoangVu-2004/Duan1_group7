@@ -45,6 +45,8 @@ match ($act) {
     //noidung
     'danhsachnoidung' => danhsachnoidung(),
     'themnoidung' => themnoidung(),
+    'create_noidung' => create_noidung(),
+    'xoanoidung' => xoanoidung(),
     
 
     // Authen

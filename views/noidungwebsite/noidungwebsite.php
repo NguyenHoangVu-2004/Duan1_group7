@@ -58,23 +58,23 @@ include "views/layout/menu.php";
         <?php
         foreach ($noidung as $item) : ?>
             <tr>
-                <td><?php echo $item['id']; ?></td>
+                <td><?php echo $item['id_noi_dung']; ?></td>
                 <td><?php echo $item['ten_trang_web']; ?></td>
                 <td>
-                    <img src="assets/admin/img/<?= $item['anh'] ?>" width="200" height="200" alt="">
+                    <img src="uploads/noidung/<?= $item['anh'] ?>" width="200" height="200" alt="">
                 </td>
                 <td><?php echo $item['noi_dung']; ?></td>
                 <td><?php echo $item['link_lien_ket']; ?></td>
                 <td>
-                    <a href="?act=suanoidung&id="><input type="submit" value="Sửa"></a>
-                    <input type="hidden" name="id_noi_dung" value="<?php echo $item['id_noi_dung']; ?>">
-                    <a href="?act=xoanoidung&id=<?php echo $item['id_noi_dung']; ?>" onclick="return confirm('Bạn có chắc chăn muốn xoá nội dung này không?')"><input type="submit" value="Xoá"></a>
+                    <a href="?act=suanoidung&id=<?php echo $item['id_noi_dung']; ?>"><input type="submit"  value="Sửa" name="sua"></a>
+                    <a href="?act=xoanoidung&id=<?php echo $item['id_noi_dung']; ?>" onclick="return confirm('Bạn có chắc chăn muốn xoá nội dung này không?')"><input type="submit" value="Xoá" name="xoa"></a>
                 </td>
             </tr>
         <?php endforeach; ?>
+        
     </table>
     <div class="button">
-        <a href="?act=themnoidung"><input type="submit" value="Thêm nội dung" name="them"></a>
+        <a href="<?= BASE_URL . '?act=themnoidung' ?>"><input type="submit" value="Thêm nội dung" name="them"></a>
     </div>
 </div>
 </div>

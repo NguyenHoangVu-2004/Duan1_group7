@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Trang chủ - Admin</title>
 
     <!-- Custom fonts for this template-->
     <link href="assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -41,11 +41,6 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Trang chủ</span></a>
-            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -61,7 +56,10 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
 
-
+            <li class="nav-item">
+                <a class="nav-link" href="?act=/">
+                    <span style="font-weight: 500; font-size: 20px; ">Trang chủ</span></a>
+            </li>
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
