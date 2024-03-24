@@ -48,27 +48,25 @@ include "views/layout/menu.php";
     </style>
     <table align="center">
         <tr>
-            <th>ID chức vụ</th>
-            <th>Tên chức vụ</th>
-            <th>Mô tả</th>
+            <th>ID danh mục</th>
+            <th>Tên danh mục</th>
             <th>Hành động</th>
         </tr>
         <?php
-        foreach ($chucvu as $item) : ?>
+        foreach ($danhmuc as $item) : ?>
             <tr>
-                <td><?php echo $item['id_chuc_vu']; ?></td>
-                <td><?php echo $item['ten_chuc_vu']; ?></td>
-                <td><?php echo $item['mo_ta']; ?></td>
+                <td><?php echo $item['id_danh_muc']; ?></td>
+                <td><?php echo $item['ten_danh_muc']; ?></td>
                 <td>
-                    <a href="?act=suachucvu&id=<?php echo $item['id_chuc_vu']; ?>"><input type="submit"  value="Sửa" name="sua"></a>
-                    <a href="?act=xoachucvu&id=<?php echo $item['id_chuc_vu']; ?>" onclick="return confirm('Bạn có chắc chăn muốn xoá chức vụ này không?')"><input type="submit" value="Xoá" name="xoa"></a>
+                    <a href="?act=suadanhmuc&id=<?php echo $item['id_danh_muc']; ?>"><input type="submit"  value="Sửa" name="sua"></a>
+                    <a href="?act=xoadanhmuc&id=<?php echo $item['id_danh_muc']; ?>" onclick="return confirm('Bạn có chắc chắn muốn xoá danh mục này không?')"><input type="submit" value="Xoá" name="xoa"></a>
                 </td>
             </tr>
         <?php endforeach; ?>
         
     </table>
     <div class="button">
-        <a href="<?= BASE_URL . '?act=themchucvu' ?>"><input type="submit" value="Thêm chức vụ" name="them"></a>
+        <a href="<?= BASE_URL . '?act=themdanhmuc' ?>"><input type="submit" value="Thêm danh mục" name="them"></a>
     </div>
 </div>
 </div>

@@ -61,6 +61,17 @@ match ($act) {
 
     //chucvu
     'chucvu' => chucvu(),
+    'themchucvu' => themchucvu(),
+    'create_chucvu' => create_chucvu(),
+    'xoachucvu' => xoachucvu(),
+
+    //danhmuc
+    'danhmuc' => danhmuc(),
+    'themdanhmuc'=> themdanhmuc(),
+    'create_danhmuc'=> create_danhmuc(),
+    'xoadanhmuc' => xoadanhmuc(),
+
+
 
     // Authen
     'login' => authenShowFormLogin(),

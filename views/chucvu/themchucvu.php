@@ -44,25 +44,19 @@ include "./views/layout/menu.php";
     }
 </style>
 <div class="container-fluid">
-    <h1>Thêm nội dung website</h1>
-    <form action="<?= BASE_URL . '?act=create_noidung' ?>" method="post" enctype="multipart/form-data">
-        <p>Tên trang web</p>
-        <input type="text" name="ten_trang_web" >
+    <h1>Thêm chức vụ</h1>
+    <form action="<?= BASE_URL . '?act=create_chucvu' ?>" method="post" enctype="multipart/form-data">
+        <p>Tên chức vụ</p>
+        <input type="text" name="ten_chuc_vu" >
 
-        <p>Ảnh</p>
-        <input type="file" name="anh" >
-
-        <p>Nội dung</p>
-        <input type="text" name="noi_dung" >
-
-        <p>Link liên kết</p>
-        <input type="text" name="link_lien_ket" >
+        <p>Mô tả</p>
+        <input type="text" name="mo_ta" >
 
         <br>
         <input class="bt" type="reset" value="Nhập lại">
         <input class="bt" type="submit" value="Thêm" name="them">
     </form>
-    <a href="index.php?act=danhsachnoidung"><input type="button" value="Danh sách"></a>
+    <a href="index.php?act=chucvu"><input type="button" value="Danh sách"></a>
 </div>
 
 </div>

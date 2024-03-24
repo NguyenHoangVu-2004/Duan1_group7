@@ -1,9 +1,9 @@
 <?php
-if (!function_exists('showAll_chucvu')) {
-    function showAll_chucvu()
+if (!function_exists('showAll_danhmuc')) {
+    function showAll_danhmuc()
     {
         try {
-            $sql = "SELECT * FROM `tb_chuc_vu` ORDER BY id_chuc_vu DESC";
+            $sql = "SELECT * FROM `tb_danh_muc` ORDER BY id_danh_muc DESC";
 
             $stmt = $GLOBALS['conn']->prepare($sql);
 
@@ -15,16 +15,16 @@ if (!function_exists('showAll_chucvu')) {
         }
     }
 }
-if (!function_exists('delete_chucvu')) {
-    function delete_chucvu($id_chuc_vu)
+if (!function_exists('delete_danh_muc')) {
+    function delete_danhmuc($id_danh_muc)
     {
         try {
-            $sql = "DELETE FROM `tb_chuc_vu` WHERE id_chuc_vu = :id_chuc_vu";
+            $sql = "DELETE FROM `tb_danh_muc` WHERE id_danh_muc = :id_danh_muc";
 
             $stmt = $GLOBALS['conn']->prepare($sql);
 
 
-            $stmt->bindParam(":id_chuc_vu", $id_chuc_vu);
+            $stmt->bindParam(":id_danh_muc", $id_danh_muc);
 
             $stmt->execute();
         } catch (\Exception $e) {
@@ -32,3 +32,4 @@ if (!function_exists('delete_chucvu')) {
         }
     }
 }
+?>
