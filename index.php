@@ -22,7 +22,9 @@ $arrRouteNeedAuth = [
     'order',
     'addOrder',
     'updateQuantity',
-    'createUser'
+    'createUser',
+    'danhsachnoidung',
+    
 ];
 
 // Kiểm tra xem user đã đăng nhập chưa
@@ -63,8 +65,8 @@ match ($act) {
     'chucvu' => chucvu(),
 
     // Authen
-    'login' => authenShowFormLogin(),
-    'logout' => authenLogout(),
+    'dangnhap' => hienthitrangdangnhap(),
+    'logout' => dangxuat(),
 };
 
 require_once './commons/disconnect-db.php';

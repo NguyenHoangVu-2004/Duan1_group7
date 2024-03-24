@@ -1,15 +1,14 @@
 <?php 
-
 if (!function_exists('getUserClientByEmailAndPassword')) {
-    function UserClientByEmailAndPassword($email, $password)
+    function getUserClientByEmailAndPassword($email, $mat_khau)
     {
         try {
-            $sql = "SELECT * FROM users WHERE email = :email AND password = :password AND type = 0 LIMIT 1";
+            $sql = "SELECT * FROM `tb_nguoi_dung` WHERE email = :email AND mat_khau = :mat_khau ";
 
             $stmt = $GLOBALS['conn']->prepare($sql);
 
             $stmt->bindParam(":email", $email);
-            $stmt->bindParam(":password", $password);
+            $stmt->bindParam(":mat_khau", $mat_khau);
 
             $stmt->execute();
 
@@ -19,3 +18,4 @@ if (!function_exists('getUserClientByEmailAndPassword')) {
         }
     }
 }
+?>

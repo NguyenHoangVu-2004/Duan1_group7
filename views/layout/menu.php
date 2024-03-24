@@ -24,7 +24,7 @@
 <hr class="sidebar-divider">
 <!-- Nav Item - Charts -->
 <li class="nav-item">
-    <a class="nav-link" href="charts.html">
+    <a class="nav-link" href="<?= BASE_URL . '?act=dangnhap' ?>">
         <span>Đăng nhập</span></a>
 </li>
 <li class="nav-item">

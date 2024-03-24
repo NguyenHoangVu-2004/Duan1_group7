@@ -30,14 +30,14 @@ if (!function_exists('e404')) {
 
 if (!function_exists('middleware_auth_check')) {
     function middleware_auth_check($act, $arrRouteNeedAuth) {
-        if ($act == 'login') {
+        if ($act == 'dangnhap') {
             if (!empty($_SESSION['user'])) {
                 header('Location: ' . BASE_URL);
                 exit();
             }
         } 
         elseif (empty($_SESSION['user']) && in_array($act, $arrRouteNeedAuth)) {
-            header('Location: ' . BASE_URL . '?act=login');
+            header('Location: ' . BASE_URL . '?act=dangnhap');
             exit();
         }
     }
