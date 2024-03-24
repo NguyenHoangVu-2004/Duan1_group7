@@ -43,4 +43,11 @@ function xoachucvu()
         echo "<script>window.location.href = 'index.php?act=chucvu';</script>";
     }
 }
+function xoaAllchucvu()
+{
+    if (isset($_GET['act']) && $_GET['act'] == 'xoaAllchucvu') {
+        deleteAll_chucvu();
+        echo "<script>window.location.href = 'index.php?act=chucvu';</script>";
+    }
+}
 ?>

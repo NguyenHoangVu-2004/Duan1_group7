@@ -32,4 +32,18 @@ if (!function_exists('delete_danh_muc')) {
         }
     }
 }
+if (!function_exists('deleteAll_danhmuc')) {
+    function deleteAll_danhmuc() {
+        try {
+            $sql = "DELETE FROM `tb_danh_muc`";
+            
+            $stmt = $GLOBALS['conn']->prepare($sql);
+
+            $stmt->execute();
+        } catch (\Exception $e) {
+            debug($e);
+        }
+    }
+}
+
 ?>

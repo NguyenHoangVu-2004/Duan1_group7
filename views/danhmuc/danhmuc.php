@@ -58,14 +58,15 @@ include "views/layout/menu.php";
                 <td><?php echo $item['id_danh_muc']; ?></td>
                 <td><?php echo $item['ten_danh_muc']; ?></td>
                 <td>
-                    <a href="?act=suadanhmuc&id=<?php echo $item['id_danh_muc']; ?>"><input type="submit"  value="Sửa" name="sua"></a>
+                    <a href="?act=suadanhmuc&id=<?php echo $item['id_danh_muc']; ?>"><input type="submit" value="Sửa" name="sua"></a>
                     <a href="?act=xoadanhmuc&id=<?php echo $item['id_danh_muc']; ?>" onclick="return confirm('Bạn có chắc chắn muốn xoá danh mục này không?')"><input type="submit" value="Xoá" name="xoa"></a>
                 </td>
             </tr>
         <?php endforeach; ?>
-        
+
     </table>
     <div class="button">
+        <a href="<?= BASE_URL . '?act=xoaAlldanhmuc' ?>"><input type="submit" value="Xoá tất cả " style="background-color: red;" onclick="return confirm('Bạn có chắc chắn muốn xoá tất cả danh mục không?')" name="xoaAll"></a>
         <a href="<?= BASE_URL . '?act=themdanhmuc' ?>"><input type="submit" value="Thêm danh mục" name="them"></a>
     </div>
 </div>

@@ -13,7 +13,7 @@ function create_danhmuc()
     if (isset($_POST['them'])) {
         $ten_danh_muc = $_POST['ten_danh_muc'];
 
-        if (empty($ten_danh_muc) ) {
+        if (empty($ten_danh_muc)) {
             echo "<script>alert('Hãy nhập đủ thông tin!')</script>";
             echo "<script>window.location.href = 'index.php?act=themdanhmuc';</script>";
         } else {
@@ -40,4 +40,10 @@ function xoadanhmuc()
         echo "<script>window.location.href = 'index.php?act=danhmuc';</script>";
     }
 }
-?>
+function xoaAlldanhmuc()
+{
+    if (isset($_GET['act']) && $_GET['act'] == 'xoaAlldanhmuc') {
+        deleteAll_danhmuc();
+        echo "<script>window.location.href = 'index.php?act=danhmuc';</script>";
+    }
+}

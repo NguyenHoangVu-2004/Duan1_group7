@@ -49,6 +49,7 @@ match ($act) {
     'suanoidung' => suanoidung(),
     'update_noidung' => update_noidung(),
     'xoanoidung' => xoanoidung(),
+    'xoaAllnoidung' => xoaAllnoidung(),
     
     //lienhe
     'lienhe' => lienhe(),
@@ -64,12 +65,14 @@ match ($act) {
     'themchucvu' => themchucvu(),
     'create_chucvu' => create_chucvu(),
     'xoachucvu' => xoachucvu(),
+    'xoaAllchucvu' => xoaAllchucvu(),
 
     //danhmuc
     'danhmuc' => danhmuc(),
     'themdanhmuc'=> themdanhmuc(),
     'create_danhmuc'=> create_danhmuc(),
     'xoadanhmuc' => xoadanhmuc(),
+    'xoaAlldanhmuc' => xoaAlldanhmuc(),
 
 
 

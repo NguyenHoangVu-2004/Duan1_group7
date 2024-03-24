@@ -32,3 +32,16 @@ if (!function_exists('delete_chucvu')) {
         }
     }
 }
+if (!function_exists('deleteAll_chucvu')) {
+    function deleteAll_chucvu() {
+        try {
+            $sql = "DELETE FROM `tb_chuc_vu`";
+            
+            $stmt = $GLOBALS['conn']->prepare($sql);
+
+            $stmt->execute();
+        } catch (\Exception $e) {
+            debug($e);
+        }
+    }
+}
