@@ -105,4 +105,5 @@
                     </div>
                 </div>
             </form>
+            <a class="btn btn-danger" href="<?= BASE_URL . '?act=logout' ?>">Đăng xuất</a>
         </nav>

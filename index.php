@@ -24,6 +24,8 @@ $arrRouteNeedAuth = [
     'updateQuantity',
     'createUser',
     'danhsachnoidung',
+    'danhmuc',
+    'chucvu'
     
 ];
 
