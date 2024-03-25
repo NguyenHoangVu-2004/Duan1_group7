@@ -16,15 +16,17 @@ function dangnhap() {
         if(empty($user['email'])) {
             $_SESSION['error'] = "Vui lòng nhập địa chỉ email!";
 
-        } elseif(empty($user['mat_khau'])) {
+        } 
+        if(empty($user['mat_khau'])) {
             $_SESSION['error1'] = "Vui lòng nhập mật khẩu!";
 
-        } else {
-
+        }else{
             $_SESSION['user'] = $user;
             header('Location: ' . BASE_URL);
             exit();
-        }
+        } 
+
+            
     }
 
    

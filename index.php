@@ -25,7 +25,11 @@ $arrRouteNeedAuth = [
     'createUser',
     'danhsachnoidung',
     'danhmuc',
-    'chucvu'
+    'chucvu',
+    'lienhe' ,
+    'danhgia',
+    'binhluan'
+
     
 ];
 
@@ -80,8 +84,10 @@ match ($act) {
 
 
 
-    // Authen
+    // dang nhap dnag ki
     'dangnhap' => hienthitrangdangnhap(),
+    'dangki' =>dangki(),
+    'taotaikhoan' =>process_form_data(),
     'logout' => dangxuat(),
 };
 
